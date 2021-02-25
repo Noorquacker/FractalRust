@@ -1,0 +1,3 @@
+Cargo.toml
+src/main.rs
+target/debug/build/sdl2-sys-94cf2b9751155729/out/sdl_bindings.rs
