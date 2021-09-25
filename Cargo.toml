@@ -2,10 +2,15 @@
 name = "FractalRust"
 version = "0.1.0"
 authors = ["Noorquacker <noorquacker@nqind.com>"]
-edition = "2018"
+edition = "2018" # dont change this u dummy, this is the cargo edition, not your package edition
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 sdl2 = "0.34"
 num = "0.3.1"
+#nalgebra = "0.28.0"
+
+[target.x86_64-pc-windows-gnu]
+linker = "/usr/bin/$ARCH-w64-mingw32-gcc"
+ar = "/usr/bin/$ARCH-w64-mingw32-ar"
